@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script src="./js/snowfall.min.js"></script>
+        <script src="https://kit.fontawesome.com/4e57366a86.js" crossorigin="anonymous"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+        <title>Portfolio</title>
+        <link rel="stylesheet" href = "style.css"/>
+    </head>
+    <body>
+            <nav class="d-md-none">
+                <h1>ASHWIN</h1>
+                <div class = "nav-icons-wrapper">
+                    <a id = "homeTopBtn"><i class="fa-solid fa-house"></i></a>
+                    <a id = "aboutTopBtn"><i class="fa-regular fa-user"></i></a>
+                    <a id = "ProjectTopBtn"><i class="fa-solid fa-diagram-project"></i></a>
+                    <a id = "contactTopBtn"><i class="fa-regular fa-address-card"></i></a>
+                </div>
+                <i class="fa-solid fa-bars hamburgerIcon" id="HamburgerMenu"></i>
+            </nav>
+            <section class="d-flex">
+                <aside id="sideBar" class="d-none d-md-block">
+                    <div>
+                        <div class="aside-img-container">
+                            <img src="./images/profile-img.jpg" />
+                            <div><span>ASHWIN</span></div>
+                        </div>
+                        <div class="iconAnchor-container icons-checked" id = "homeBtn">
+                            <div>
+                                <i class="fa-solid fa-house"></i>
+                                <a href="#">Home</a>
+                            </div>
+                        </div>
+                        <div class="iconAnchor-container" id = "aboutBtn">
+                            <div>
+                                <i class="fa-regular fa-user"></i>
+                                <a href="#">About</a>
+                            </div>
+                        </div>
+                        <!-- <div class="iconAnchor-container" id = "resumeBtn">
+                            <div>
+                                <i class="fa-solid fa-sheet-plastic"></i>
+                                <a href="#">Resume</a>
+                            </div>
+                        </div> -->
+                        <div class="iconAnchor-container" id = "ProjectBtn">
+                            <div>
+                                <i class="fa-solid fa-diagram-project"></i>
+                                <a href="#">Project</a>
+                            </div>
+                        </div>
+                        <div class="iconAnchor-container" id = "contactBtn">
+                            <div>
+                                <i class="fa-regular fa-address-card"></i>
+                                <a href="#">Contact</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="aside-bottom-icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-x-twitter"></i>
+                    </div>
+                </aside>
+                <!-- Home Page -->
+                <div class="home-bg-img-container" id = "homeSection">
+                    <h1>ASHWIN SELVA <span>DAS</span></h1>
+                    <p>I am a <span id="typingAni"></span></p>
+                </div>
+
+                <!-- About section -->
+                <section class="aboutSec d-none" id = "aboutSection">
+                    <div class="about-header">
+                        <h1>About Me</h1>
+                        <i class="fa-regular fa-user"></i>
+                    </div>
+                    <hr>
+                    <div class="d-lg-flex">
+                        <div class="about-content">
+                            <h1>Full Stack Developer</h1>
+                            <p>Hello! I’m a passionate Full Stack Developer currently in my final year at Jeppiaar Engineering College. I have a strong foundation in web development technologies and a deep interest in building dynamic, user-friendly applications. Throughout my studies, I have gained hands-on experience with a wide range of technologies, including HTML, CSS, JavaScript, Python, SQLite, GitHub, and more.</p>
+                            <p>During my internship with NxtWave, I had the opportunity to work on real-world projects that honed my skills and gave me invaluable exposure to the practical aspects of software development. </p>
+                            <p>I’m always eager to learn new technologies and improve my skill set to stay up-to-date with industry trends. My ultimate goal is to combine my technical expertise with my creative problem-solving skills to develop innovative applications that provide real value to users.</p>
+                        </div>
+                        <div class="about-pers-inf">
+                            <h1>Personal Information</h1>
+                            <p><span>Name</span> : Ashwin Selva Das</p>
+                            <p><span>Age</span> : 22</p>
+                            <p><span>City</span> : Chennai</p>
+                            <p><span>Email</span> : ashwinashwin@gmail.com</p>
+                            <p><span>Contact</span> : +91 8870489737</p>
+                            <button>Download CV</button>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Project Section -->
+                <section class="projects-sec d-none" id = "projectSection">
+                    <div class="projects-header">
+                        <h1>Projects</h1>
+                        <i class="fa-solid fa-diagram-project"></i>
+                    </div>
+                    <hr>
+                    <div class="projects-card-wrapper">
+                        <div class="projects-card">
+                            <img class="projects-card-img" src="https://img.freepik.com/free-vector/complete-weather-app-template_23-2147553418.jpg?t=st=1732333238~exp=1732336838~hmac=87bd89f433065c0634524d1d60ca16a271a4a434923002a21b6ba0578466245f&w=740" />
+                            <div>
+                                <h1>Weather Application</h1>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project1">
+                                      Know More <span> &#8594;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-card">
+                            <img class="projects-card-img" src="https://bsmedia.business-standard.com/_media/bs/img/article/2021-09/09/full/20210909132612.jpg" />
+                            <div>
+                                <h1>Nxtwave Clone Project</h1>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project2">
+                                      Know More <span> &#8594;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-card">
+                            <img class="projects-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfyV3og9MwUhiYWEcdpUWVhac846__eGlmlQ&s" />
+                            <div>
+                                <h1>Zapoos Website Clone</h1>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project3">
+                                      Know More <span> &#8594;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-card">
+                            <img class="projects-card-img" src="https://repository-images.githubusercontent.com/452334441/b5da6131-e638-4464-9572-310f86f8340f" />
+                            <div>
+                                <h1>Netflix Website clone</h1>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project4">
+                                      Know More <span> &#8594;</span>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="projects-card">
+                            <img class="projects-card-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTm62JCtUUh8FJoZvCUo405A1AE7hGly9_zdg&s" />
+                            <div>
+                                <h1>Tech Company Website</h1>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#project5">
+                                      Know More <span> &#8594;</span>
+                                </button>
+                            </div>
+                        </div>
+                </div>
+                 <!-- Modal 1 -->
+                <div class="modal fade" id="project1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project1" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project1">Weather Application</h5>
+                    <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This weather application provides real-time weather information to help you stay informed about current conditions in your location or any city around the world. It displays essential details such as temperature, humidity, wind speed, and a weather description (sunny, cloudy, rainy, etc.). The app uses an intuitive and user-friendly interface, making it easy for users to quickly check the forecast. The data is updated regularly, ensuring you always have accurate information. Whether you're planning your day or preparing for a trip, this weather app is a reliable tool for your weather-related needs.</p>
+                    <div>
+                        <h1>Technologies Used</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>bootstrap</li>
+                        </ul>
+                    </div>
+                    <a href = "https://github.com/Ashwin0422/weather-App.git" target="_blank">GitHub Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <!-- Modal 2 -->
+                <div class="modal fade" id="project2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project2" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project2">Nxtwave Podcast Clone</h5>
+                    <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This project is a clone of the Nxtwave Podcast website, developed during my internship using HTML, CSS, JavaScript, Bootstrap, and the Swiper JS library. Throughout the development process, I adopted a mobile-first approach, ensuring that the website delivers a seamless and responsive user experience across all device sizes, from smartphones to desktops. The site is fully responsive, adjusting dynamically to different screen resolutions, providing optimal performance and navigation on any device.</p>
+                    <p>I used Swiper JS to implement a smooth and interactive podcast carousel, allowing users to browse through episodes with ease. This website is hosted on Netlify, ensuring fast and reliable performance.</p>
+                    <p>During my internship, I gained valuable hands-on experience in web development and refined my skills in creating user-friendly, responsive web applications. This project allowed me to apply best practices in front-end development, focusing on performance, accessibility, and design, making it a truly engaging platform for podcast enthusiasts.</p>
+                    <div>
+                        <h1>Technologies Used</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>bootstrap</li>
+                            <li>Swiper JS</li>
+                        </ul>
+                    </div>
+                    <a href = "https://github.com/Ashwin0422/Nxtwave-clone-project.git" target="_blank">GitHub Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                <!-- Modal 3 -->
+                <div class="modal fade" id="project3" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project3" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project3">Zapoos Shopping Website Clone</h5>
+                    <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This project is a clone of the Zapoose Shopping Website, developed using HTML, CSS, JavaScript, Bootstrap, and the Swiper JS library. The website features a modern, clean, and fully responsive design, ensuring an excellent user experience across all devices, from mobile phones to desktops. With a focus on user interface (UI), the site delivers a visually appealing and intuitive shopping platform.</p>
+                    <p>This project helped me enhance my front-end development skills while focusing on building an interactive, well-structured, and visually attractive e-commerce website. It is an ideal showcase of my ability to create clean, responsive websites with excellent UI, ensuring usability and functionality.</p>
+                    <div>
+                        <h1>Technologies Used</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>bootstrap</li>
+                            <li>Swiper JS</li>
+                        </ul>
+                    </div>
+                    <a href = "zapposclone.ccbp.tech" target="_blank">Live Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                 <!-- Modal 4 -->
+                <div class="modal fade" id="project4" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project4" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project4">Netflix Website Clone</h5>
+                    <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This is a clone of the Netflix streaming platform, created during my first Nxtwave Sprint Program using HTML, CSS, JavaScript, and Swiper JS. The site is fully responsive, offering a seamless browsing experience across devices. It features interactive carousels and smooth transitions, powered by Swiper JS, to display movies and TV shows. This project enhanced my skills in responsive design and UI development, providing valuable hands-on experience in building engaging, user-friendly websites.</p>
+                    <div>
+                        <h1>Technologies Used</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>bootstrap</li>
+                            <li>Swiper JS</li>
+                        </ul>
+                    </div>
+                    <a href = "ashnetflixclone.ccbp.tech" target="_blank">Live Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                 <!-- Modal 5 -->
+                <div class="modal fade" id="project5" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="project5" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="project5">Software Company Website</h5>
+                    <button type="button" class="btn-close close-button" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <p>This website was created during my internship at Nexus Info, showcasing the company's services and expertise. Developed using HTML, CSS, JavaScript, and Bootstrap, the site features a clean UI and is fully responsive, ensuring a smooth user experience on any device. It includes key elements like an engaging layout, detailed service sections, and a user feedback form to collect customer insights. The website is hosted for real-time access, and the design prioritizes both usability and performance, offering a professional online presence for the company.</p>
+                    <div>
+                        <h1>Technologies Used</h1>
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>bootstrap</li>
+                            <li>Swiper JS</li>
+                        </ul>
+                    </div>
+                    <a href = "https://demotechysoftware.netlify.app/" target="_blank">Live Link</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+                </section>
+
+                <!-- Contact section -->
+                <section class = "contactMe-sec d-none" id = "contactSection">
+                    <div class="contactMe-header">
+                        <h1>Contact Me</h1>
+                        <i class="fa-regular fa-address-card"></i>
+                    </div>
+                    <hr>
+                    <div class = "d-flex align-center">
+                    <div class = "contactMe-container">
+                        <div>
+                        <h1>Let's Talk</h1>
+                        <form class = "contactMe-form">
+                            <div class = "d-md-flex">
+                            <div class = "input-container">
+                                <label for = "cont-name" class = "namelabel">Name</label>
+                                <input type = "text" id = "cont-name" placeholder="Please Enter Your Name"/>
+                            </div>
+                            <div class = "input-container">
+                                <label for = "cont-name">Email</label>
+                                <input type = "email" id = "cont-name" placeholder="Please Enter Your Email"/>
+                            </div>
+                            </div>
+                            <div class = "textarea-container">
+                                <label>How can I help You?</label>
+                                <textarea placeholder="How can I help You?"></textarea>
+                            </div>
+                            <div class = "d-flex justify-content-center">
+                                <button>Send Message</button>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </section>
+
+            </section>
+
+
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+        <script src = "index.js"></script>
+    </body>
+</html>
